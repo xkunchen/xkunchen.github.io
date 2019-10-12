@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-27T09:03:05.044Z</updated>
+  <updated>2019-10-12T03:48:47.199Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test title</title>
+    <link href="http://yoursite.com/2019/10/12/test-title/"/>
+    <id>http://yoursite.com/2019/10/12/test-title/</id>
+    <published>2019-10-12T03:44:53.000Z</published>
+    <updated>2019-10-12T03:48:47.199Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="文档语言"><a href="#文档语言" class="headerlink" title="文档语言"></a>文档语言</h2><ul><li><a href="README-CN.md">中文文档</a></li><li><a href="README.md">English</a></li></ul><h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul><li><a href="#introduction-介绍">Introduction 介绍</a></li><li><a href="#demo-演示">Demo 演示</a></li><li><a href="#features-特点">Features 特点</a></li><li><a href="#installation-安装">Installation 安装</a></li><li><a href="#configuration-配置">Configuration 配置</a></li><li><a href="#customize-自定义">Customize 自定义</a></li><li><a href="#faq-提问">FAQ 提问</a></li><li><a href="#gallary-图片展示">Gallary 图片展示</a></li><li><a href="#license-开源许可">License 开源许可</a></li></ul><h2 id="Introduction-介绍"><a href="#Introduction-介绍" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><p>优雅、功能全面、阅读友好的hexo主题。</p><h2 id="Demo-演示"><a href="#Demo-演示" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul><li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li><li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;文档语言&quot;&gt;&lt;a href=&quot;#文档语言&quot; class=&quot;headerlink&quot; title=&quot;文档语言&quot;&gt;&lt;/a&gt;文档语言&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;README-CN.md&quot;&gt;中文文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;README
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
