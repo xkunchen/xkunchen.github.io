@@ -435,7 +435,7 @@
         <i class="fa fa-user"></i>
       </span>
       <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
+        本站总访客量<span id="busuanzi_value_site_uv"></span>人次
       </span>
     </span>
   
@@ -446,11 +446,12 @@
         <i class="fa fa-eye"></i>
       </span>
       <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
       </span>
     </span>
   
 </div>
+
 
 
 
@@ -517,3 +518,22 @@
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
+<script src="https://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+<script>
+showBusuanziMethod();
+
+function showBusuanziMethod(){
+  var myVar = setTimeout(function(){
+		console.log("aaaaa");
+	  if($("p").css("display")=="none"){
+		$("#busuanzi_container_site_uv").attr("style", "display:inline");
+		$("#busuanzi_container_site_pv").attr("style", "display:inline"); 
+		$("#busuanzi_container_page_pv").attr("style", "display:inline"); 
+	  }else{
+		clearTimeout(myVar);
+	  }
+  }, 1000); 
+
+  
+}
+</script>
