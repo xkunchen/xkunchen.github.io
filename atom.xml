@@ -5,9 +5,9 @@
   <subtitle>大鹏一日同风起，扶摇直上九万里</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://xkunchen.github.io/"/>
   <updated>2019-10-12T03:48:47.199Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://xkunchen.github.io/</id>
   
   <author>
     <name>陈旭坤</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test title</title>
-    <link href="http://yoursite.com/2019/10/12/test-title/"/>
-    <id>http://yoursite.com/2019/10/12/test-title/</id>
+    <link href="https://xkunchen.github.io/2019/10/12/test-title/"/>
+    <id>https://xkunchen.github.io/2019/10/12/test-title/</id>
     <published>2019-10-12T03:44:53.000Z</published>
     <updated>2019-10-12T03:48:47.199Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/08/27/hello-world/"/>
-    <id>http://yoursite.com/2019/08/27/hello-world/</id>
+    <link href="https://xkunchen.github.io/2019/08/27/hello-world/"/>
+    <id>https://xkunchen.github.io/2019/08/27/hello-world/</id>
     <published>2019-08-27T02:49:08.275Z</published>
     <updated>2019-08-27T09:03:05.044Z</updated>
     
