@@ -855,11 +855,12 @@ showBusuanziMethod();
 
 function showBusuanziMethod(){
   var myVar = setTimeout(function(){
-		console.log("aaaaa");
-	  if($("p").css("display")=="none"){
+	  var isload=false;
+	  if($("p").css("display")=="none"||isload!=true){
 		$("#busuanzi_container_site_uv").attr("style", "display:inline");
 		$("#busuanzi_container_site_pv").attr("style", "display:inline"); 
 		$("#busuanzi_container_page_pv").attr("style", "display:inline"); 
+		isload=true;
 	  }else{
 		clearTimeout(myVar);
 	  }
