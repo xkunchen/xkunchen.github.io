@@ -6,8 +6,7 @@
     <content><![CDATA[<h2 id="文档语言"><a href="#文档语言" class="headerlink" title="文档语言"></a>文档语言</h2><ul>
 <li><a href="README-CN.md">中文文档</a></li>
 <li><a href="README.md">English</a></li>
-</ul>
-<h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+</ul><h2 id="Contents-目录"><a href="#Contents-目录" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
 <li><a href="#introduction-介绍">Introduction 介绍</a></li>
 <li><a href="#demo-演示">Demo 演示</a></li>
 <li><a href="#features-特点">Features 特点</a></li>
@@ -17,8 +16,9 @@
 <li><a href="#faq-提问">FAQ 提问</a></li>
 <li><a href="#gallary-图片展示">Gallary 图片展示</a></li>
 <li><a href="#license-开源许可">License 开源许可</a></li>
-</ul>
-<h2 id="Introduction-介绍"><a href="#Introduction-介绍" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><p>优雅、功能全面、阅读友好的hexo主题。</p>
+</ul><h2 id="Introduction-介绍"><a href="#Introduction-介绍" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><a id="more"></a>
+
+<p>优雅、功能全面、阅读友好的hexo主题。</p>
 <h2 id="Demo-演示"><a href="#Demo-演示" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul>
 <li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li>
 <li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a></li>
@@ -46,7 +46,8 @@
   <entry>
     <title>hello world</title>
     <url>/2019/10/10/hello-world/</url>
-    <content><![CDATA[<h2 id="文档语言"><a href="#文档语言" class="headerlink" title="文档语言"></a>文档语言</h2><ul>
+    <content><![CDATA[<h2 id="文档语言"><a href="#文档语言" class="headerlink" title="文档语言"></a>文档语言</h2><a id="more"></a>
+<ul>
 <li><a href="README-CN.md">中文文档</a></li>
 <li><a href="README.md">English</a></li>
 </ul>
@@ -63,6 +64,42 @@
 </ul>
 <h2 id="Introduction-介绍"><a href="#Introduction-介绍" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><p>优雅、功能全面、阅读友好的hexo主题。</p>
 <h2 id="Demo-演示"><a href="#Demo-演示" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul>
+<li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li>
+<li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a><h2 id="文档语言-1"><a href="#文档语言-1" class="headerlink" title="文档语言"></a>文档语言</h2><!--more--></li>
+<li><a href="README-CN.md">中文文档</a></li>
+<li><a href="README.md">English</a></li>
+</ul>
+<h2 id="Contents-目录-1"><a href="#Contents-目录-1" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+<li><a href="#introduction-介绍">Introduction 介绍</a></li>
+<li><a href="#demo-演示">Demo 演示</a></li>
+<li><a href="#features-特点">Features 特点</a></li>
+<li><a href="#installation-安装">Installation 安装</a></li>
+<li><a href="#configuration-配置">Configuration 配置</a></li>
+<li><a href="#customize-自定义">Customize 自定义</a></li>
+<li><a href="#faq-提问">FAQ 提问</a></li>
+<li><a href="#gallary-图片展示">Gallary 图片展示</a></li>
+<li><a href="#license-开源许可">License 开源许可</a></li>
+</ul>
+<h2 id="Introduction-介绍-1"><a href="#Introduction-介绍-1" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><p>优雅、功能全面、阅读友好的hexo主题。</p>
+<h2 id="Demo-演示-1"><a href="#Demo-演示-1" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul>
+<li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li>
+<li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a><h2 id="文档语言-2"><a href="#文档语言-2" class="headerlink" title="文档语言"></a>文档语言</h2><!--more--></li>
+<li><a href="README-CN.md">中文文档</a></li>
+<li><a href="README.md">English</a></li>
+</ul>
+<h2 id="Contents-目录-2"><a href="#Contents-目录-2" class="headerlink" title="Contents 目录"></a>Contents 目录</h2><ul>
+<li><a href="#introduction-介绍">Introduction 介绍</a></li>
+<li><a href="#demo-演示">Demo 演示</a></li>
+<li><a href="#features-特点">Features 特点</a></li>
+<li><a href="#installation-安装">Installation 安装</a></li>
+<li><a href="#configuration-配置">Configuration 配置</a></li>
+<li><a href="#customize-自定义">Customize 自定义</a></li>
+<li><a href="#faq-提问">FAQ 提问</a></li>
+<li><a href="#gallary-图片展示">Gallary 图片展示</a></li>
+<li><a href="#license-开源许可">License 开源许可</a></li>
+</ul>
+<h2 id="Introduction-介绍-2"><a href="#Introduction-介绍-2" class="headerlink" title="Introduction 介绍"></a>Introduction 介绍</h2><p>优雅、功能全面、阅读友好的hexo主题。</p>
+<h2 id="Demo-演示-2"><a href="#Demo-演示-2" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul>
 <li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li>
 <li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a></li>
 </ul>
