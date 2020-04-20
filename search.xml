@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何加快github和stackoverflow</title>
+    <url>/2020/04/20/ru-he-jia-kuai-github-he-stackoverflow/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​        在工作上，我们有时候需要使用GitHub去下载代码，但因为有墙的原因，往往网页打开很慢，下载很慢。stack overflow也是如此，那么本文就解决三个问题，而网上有许多解决博客，而我本篇就只当搬运工。</p>
+<ol>
+<li>github打开慢</li>
+<li>github下载慢</li>
+<li>stack overflow打开慢</li>
+</ol>
+<h2 id="github打开慢"><a href="#github打开慢" class="headerlink" title="github打开慢"></a>github打开慢</h2><h3 id="https-www-jianshu-com-p-0493dcc15d6f"><a href="#https-www-jianshu-com-p-0493dcc15d6f" class="headerlink" title="https://www.jianshu.com/p/0493dcc15d6f"></a><a href="https://www.jianshu.com/p/0493dcc15d6f" target="_blank" rel="noopener">https://www.jianshu.com/p/0493dcc15d6f</a></h3><p><a href="https://github.com.ipaddress.com/" target="_blank" rel="noopener">https://github.com.ipaddress.com/</a></p>
+<h2 id="github下载慢"><a href="#github下载慢" class="headerlink" title="github下载慢"></a>github下载慢</h2><p>可以用码云这个工具人，具体操作:</p>
+<p><a href="https://blog.csdn.net/qing666888/article/details/79123742" target="_blank" rel="noopener">https://blog.csdn.net/qing666888/article/details/79123742</a></p>
+<h2 id="stack-overflow打开慢"><a href="#stack-overflow打开慢" class="headerlink" title="stack overflow打开慢"></a>stack overflow打开慢</h2><h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>stackOverflow打开慢并不是stackoverflow被墙，而是stackvoerflow用了google的api，然后国内google是用不了的，所以导致加载慢，出现样式错乱，不能注册，不能登录等等一系列问题。</p>
+<h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><p>参考了这篇博客：<a href="https://my.oschina.net/u/4000302/blog/3042609" target="_blank" rel="noopener">https://my.oschina.net/u/4000302/blog/3042609</a></p>
+<p>在本地host文件，路径一般是：C:\Windows\System32\drivers\etc。</p>
+<p>加入：一开始加入104.19.196.151  ajax.googleapis.com，打开速度快多了，后面换成127.0.0.1       ajax.googleapis.com，直接访问本地地址。</p>
+<p>其他办法：下载插件，将Google CDN 替换成国内的了。具体可参考博客：<a href="https://www.cnblogs.com/sese/p/10271964.html" target="_blank" rel="noopener">https://www.cnblogs.com/sese/p/10271964.html</a></p>
+<h2 id="最后附上我的host："><a href="#最后附上我的host：" class="headerlink" title="最后附上我的host："></a>最后附上我的host：</h2><pre><code>## stackoverflow
+127.0.0.1       ajax.googleapis.com
+# Github
+#
+# acclerate github.com touch speed
+## github
+151.101.44.249 github.global.ssl.fastly.net
+192.30.255.112 github.com
+199.232.28.133 assets-cdn.github.com
+185.199.109.153 documentcloud.github.com
+192.30.253.119 gist.github.com
+185.199.110.154 help.github.com
+140.82.114.10 nodeload.github.com
+151.101.0.133 raw.github.com
+185.199.108.153 githubstatus.com
+140.82.114.17 training.github.com
+199.232.28.133 raw.githubusercontent.com
+199.232.28.133 gist.githubusercontent.com
+199.232.28.133 cloud.githubusercontent.com
+199.232.28.133 camo.githubusercontent.com
+199.232.28.133 avatars0.githubusercontent.com
+199.232.28.133 avatars1.githubusercontent.com
+199.232.28.133 avatars2.githubusercontent.com
+199.232.28.133 avatars3.githubusercontent.com
+199.232.28.133 avatars4.githubusercontent.com
+199.232.28.133 avatars5.githubusercontent.com
+199.232.28.133 avatars6.githubusercontent.com
+199.232.28.133 avatars7.githubusercontent.com
+199.232.28.133 avatars8.githubusercontent.com
+192.30.253.120 codeload.github.com</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>工作中技巧</category>
+        <category>github，stack overflow</category>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>工作中技巧</tag>
+        <tag>github，stack overflow</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTTP详解</title>
     <url>/2020/03/16/http-xiang-jie/</url>
     <content><![CDATA[<h2 id="面试官，别问我-HTTP-了！看这-30-张图就行！"><a href="#面试官，别问我-HTTP-了！看这-30-张图就行！" class="headerlink" title="面试官，别问我 HTTP 了！看这 30 张图就行！"></a>面试官，别问我 HTTP 了！看这 30 张图就行！</h2><p>PS:以下文章来源于公众号小林coding ，作者小林coding，本人觉得不错就先收藏起来。</p>
@@ -392,10 +468,12 @@
       <categories>
         <category>oracle</category>
         <category>别人的优秀博客文章</category>
+        <category>转载</category>
       </categories>
       <tags>
         <tag>http</tag>
         <tag>别人的优秀博客文章</tag>
+        <tag>转载</tag>
       </tags>
   </entry>
   <entry>
@@ -557,8 +635,10 @@
       <categories>
         <category>oracle</category>
         <category>mysql</category>
+        <category>原创</category>
       </categories>
       <tags>
+        <tag>原创</tag>
         <tag>oracle</tag>
         <tag>mysql</tag>
       </tags>

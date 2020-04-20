@@ -356,21 +356,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">3</a></span>
+    <span class="count"><a href="/categories">8</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">8</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -386,21 +386,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">3</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">3</a></span>
+    <span class="count"><a href="/categories">8</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">8</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -544,7 +544,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,1,0,1,0],
+                data: [0,0,0,0,0,0,0,0,0,1,0,1,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -586,7 +586,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"oracle","value":2},{"name":"mysql","value":1},{"name":"别人的优秀博客文章","value":1}],
+                data: [{"name":"工作中技巧","value":1},{"name":"github，stack overflow","value":1},{"name":"原创","value":1},{"name":"oracle","value":2},{"name":"mysql","value":1},{"name":"原创","value":1},{"name":"别人的优秀博客文章","value":1},{"name":"转载","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -610,7 +610,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["oracle","mysql","http","别人的优秀博客文章"]
+                data: ["原创","工作中技巧","github，stack overflow","oracle","mysql","http","别人的优秀博客文章","转载"]
             }
         ],
         yAxis: [
@@ -623,7 +623,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1,1,1,1],
+                data: [2,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -791,6 +791,24 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/工作中技巧/">
+                <span class="chip center-align waves-effect waves-light chip-default">工作中技巧</span>
+            </a>
+            
+            
+            
+            <a href="/tags/github，stack-overflow/">
+                <span class="chip center-align waves-effect waves-light chip-default">github，stack overflow</span>
+            </a>
+            
+            
+            
+            <a href="/tags/原创/">
+                <span class="chip center-align waves-effect waves-light chip-default">原创</span>
+            </a>
+            
+            
+            
             <a href="/tags/oracle/">
                 <span class="chip center-align waves-effect waves-light chip-default">oracle</span>
             </a>
@@ -811,6 +829,12 @@
             
             <a href="/tags/别人的优秀博客文章/">
                 <span class="chip center-align waves-effect waves-light chip-default">别人的优秀博客文章</span>
+            </a>
+            
+            
+            
+            <a href="/tags/转载/">
+                <span class="chip center-align waves-effect waves-light chip-default">转载</span>
             </a>
             
             
@@ -840,7 +864,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.6k</span>&nbsp;字
+                class="white-color">10.2k</span>&nbsp;字
             
             
             
