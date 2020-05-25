@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>freeMark导出word图片的问题</title>
+    <url>/2020/05/25/freemark-dao-chu-word-tu-pian-de-wen-ti/</url>
+    <content><![CDATA[<h2 id="1-项目目的"><a href="#1-项目目的" class="headerlink" title="1.项目目的"></a>1.项目目的</h2><p>​        根据项目的需要做一个导出word的功能，本文是处理图片的问题，因为freeMark语法比较简单，所以不介绍了，这里只介绍导出word图片需要注意事项总结。</p>
+<h2 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="2.注意事项"></a>2.注意事项</h2><h3 id="2-1导出为WPS"><a href="#2-1导出为WPS" class="headerlink" title="2.1导出为WPS"></a>2.1导出为WPS</h3><p>​      首先无论WPS或office，在制作ftl模板时你都需要保留元数据，并在元数据上根据以下修改。如我们删除所有图片时应该保留一张图片，并去除例值，然后根据以下的标签进行修改。还有在接口上把图片解析为Base64字符串，因为本人项目是jdk1.7的，所以查找了许多资料最后找到了一个包下的方法，这里用com.sun.org.apache.xerces.internal.impl.dv.util.Base64，一般都用sun.misc.BASE64Encoder包，方法截图并标记了。</p>
+<p>​      <img src="https://img-blog.csdnimg.cn/20190919180810329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoZW5feF9r,size_16,color_FFFFFF,t_70" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>​      那么接下来就是我遇到的第一个问题了，一开始无论怎么导入，图片都不显示，问题发生的原因是我只把图片数据显示上去，而正确的做法需要绑定w:name和src，同一张图片这两个值要相同，而不同图片这两个值要不同于其他图片。所以我就做了以下处理，把imglist_index是数据索引，把这一串拼接起来。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190919181239389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoZW5feF9r,size_16,color_FFFFFF,t_70" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<h3 id="2-2导出为Office"><a href="#2-2导出为Office" class="headerlink" title="2.2导出为Office"></a>2.2导出为Office</h3><p>​    本来结果做好了，但对面说图片还是打不开，我懵逼了，过去一看，原来他用的是office，那么我就得重做了，代码不变，还是要把图片解析为Base64字符串，但ftl得改改。</p>
+<p>修改的地方，开头的Relationship，全文搜索Relationship，找到一个Type=”XX//image”的，复制一份做了以下处理，修改了id和target</p>
+<p><img src="/2020/05/25/freemark-dao-chu-word-tu-pian-de-wen-ti/image-20200524154400082.png" alt="image-20200524154400082"></p>
+<p>再找到一个pkg:binaryData，最好是我们在制作模板的时候存进一张照片，再把照片进行删除留下标签进行制作模板。而如下图，pkg:name与上图target要对应得上。</p>
+<p><img src="/2020/05/25/freemark-dao-chu-word-tu-pian-de-wen-ti/image-20200525083927112.png" alt="image-20200525083927112"></p>
+<p>最后改下图的图片id 和name、r:embed和pic:cNvPr的id，在实际项目中，id需要每张图片都不同，name是图片的名字，当你在office图片另存为时，默认就是名字就是图片的名字。最重要的是 r:embed必须与第一张图的id相同。还有pic:cNvPr的id，我尝试是直接写死为0，没影响，但我觉得id应该不同，所以就改了一下没管了，有兴趣可以查一下文档。</p>
+<p><img src="/2020/05/25/freemark-dao-chu-word-tu-pian-de-wen-ti/image-20200525085426556.png" alt="image-20200525085426556"></p>
+<h2 id="3总结"><a href="#3总结" class="headerlink" title="3总结"></a>3总结</h2><p>总的来说，一般建议用office制作模板，用wps制作的office打不开，但反过来可以，office制作模板时要留个元数据，然后我们就可以在此基础上进行修改，如以上介绍你如果不在图片留个图片，并在制作模板中去掉图片一长串的base64字符串，那么完全不知道哪里对应哪里。</p>
+<p>下载地址：<a href="https://github.com/xkunchen/exportWord" target="_blank" rel="noopener">https://github.com/xkunchen/exportWord</a></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>freeMark</category>
+        <category>word</category>
+        <category>工作中学习</category>
+        <category>原创</category>
+      </categories>
+      <tags>
+        <tag>freeMark</tag>
+        <tag>word</tag>
+        <tag>工作中学习</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何加快github和stackoverflow</title>
     <url>/2020/04/20/ru-he-jia-kuai-github-he-stackoverflow/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​        在工作上，我们有时候需要使用GitHub去下载代码，但因为有墙的原因，往往网页打开很慢，下载很慢。stack overflow也是如此，那么本文就解决三个问题，而网上有许多解决博客，而我本篇就只当搬运工。</p>
@@ -71,9 +120,9 @@
         <category>原创</category>
       </categories>
       <tags>
+        <tag>原创</tag>
         <tag>工作中技巧</tag>
         <tag>github，stack overflow</tag>
-        <tag>原创</tag>
       </tags>
   </entry>
   <entry>
